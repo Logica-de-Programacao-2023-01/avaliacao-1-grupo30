@@ -12,7 +12,12 @@ package q3
 //
 //Se M ou N forem iguais ou menores que 0, a função deve retornar um erro.
 
+Package q3
+
 func DominoPieces(m, n int) (int, error) {
-	// Seu código aqui
-	return 0, nil
+    if m <= 0 || n <= 0 {
+        return 0, errors.New("Os valores de M e N devem ser maiores que 0")
+    }
+    return (m * n) / 2, nil
 }
+
