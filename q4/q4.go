@@ -14,7 +14,6 @@ package main
 import "fmt"
 
 func ClassifyPrices(prices []int) (int, error) {
-	// package main
 
 	if len(prices) == 0 {
 		return 0, fmt.Errorf("Inválido.")
