@@ -26,6 +26,8 @@ package q4
 
 package q1
 
+import "fmt"
+
 func DivideWatermelon(PesoMelancia int) (bool, error) {
 	if PesoMelancia <= 0 {
 		return false, fmt.Errorf("peso inválido")
